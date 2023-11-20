@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#28 CSSPositionProperty</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+        .box{
+            border: 2px solid black;
+            height: 433px;
+            width: 80vw;
+            padding: 3px;
+            margin: 3px; 
+        }
+        .box1{
+            background-color: aqua;
+            /* position: sticky; */
+            /* position: absolute; */
+            /* position: fixed; */
+            /* position: relative; */
+            /* position: static; */
+            /* position: -ms-page; */
+            /* position: inherit; */
+            position: unset;
+            top: 0px;
+        }
+        .box2{
+            background-color: orange;
+       
+           }
+        .box3{
+            background-color: plum;
+            bottom: 0px;
+            left: 25vw;
+        }  
+        .box4{
+            background-color: lightcoral;
+        }
+        .parent{
+            border: 2px solid purple;
+            padding: 43px;
+            margin: 34px;
+            /* transform: translate("1"); */
+            /* filter: invert("0"); */
+            perspective: 0em;
+        }
+
+
+        
+    </style>
+</head>
+<body>
+    <h1>CSS Position Property</h1>
+    <div class="parent">
+        <div class="box box1"><h1>Box1</h1></div>
+        <div class="box box2"><h1>Box2</h1></div>
+        <div class="box box3"><h1>Box3</h1></div>
+        <div class="box box4"><h1>Box4</h1></div>
+    </div>
+
+</body>
+</html>

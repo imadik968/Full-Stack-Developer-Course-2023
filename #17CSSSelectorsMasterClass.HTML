@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#17 CSS_Selectors_MasterClass</title>
+    <style>
+        /* Elements Selector */
+        div{
+            /*background-color: red;*/
+        }
+
+        /* class Selector */
+        .red{
+            background-color: red;
+        }
+
+        /* id Selector */
+        #green{
+            background-color: green;
+        }
+
+        /* child Selector */
+        div > p{
+            color: blue;
+            background-color: brown;
+        }
+
+        /* descendent Selector */
+        div p{
+            color: yellow;
+            background-color: black;
+        }
+
+            /* universal selector */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* pseudo selector */
+        a:visited{
+            color: red;
+        }
+        a:link{
+            color: green;
+            background-color: gray;
+        }
+
+        a:active{
+            background-color: orange;
+        }
+
+
+        a:hover{
+            background-color: aqua;
+
+            color: black;
+        }
+
+
+        p:first-child{
+            color: blueviolet;
+        }
+
+    </style>
+</head>
+<body>
+    <main class="one">
+        <p>I am First</p>
+        <p>I am Secod</p>
+    </main>
+    <div class="selector">
+        I am Selector
+    </div>
+    <div class="red">
+        Hi i am IK
+    </div>
+
+    <div id="green">
+        Front End React Developer
+    </div>
+
+    <div>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores nihil iure harum non quasi, consectetur dolor obcaecati earum at quas.</p>
+    </div>
+
+    <a href="https://www.google.com">Go to Google</a>
+    <a href="https://www.facebook2.com">Go to Facebook</a>
+    
+</body>
+</html>

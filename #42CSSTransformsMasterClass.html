@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#42 CSS Transforms Master Class</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .box{
+            height: 50px;
+            width: 50px;
+            background-color: orangered;
+            border: 2px solid gray;
+            /* transform: rotate(40deg); */
+            /* transform: rotate(0.5turn); */
+            /* transform: rotateY(96deg); */
+            /* transform: rotateZ(9deg); */
+            /* transform: scaleX(1.6); */
+            /* transform: scale(1.6); */
+            transform: skew(5deg);
+            /* transform: scaleY(1.6); */
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* transition: 3s; */
+
+        }
+        .box:hover{
+            transform: skew(5deg);
+            background-color: gray;
+            transition: 3s;
+        }
+        .container{
+            width: 100vw;
+            height: 80vh;
+            border: 2px solid orangered;
+        }
+        .img img{
+            /* transition: 3s; */
+            height: 200px !important;
+            width: 200px !important;
+            /* background-color: orangered; */
+            border: 2px solid gray;
+            /* transform: rotate(40deg); */
+            /* transform: rotate(0.5turn); */
+            transform: rotateY(120deg);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .img img:hover{
+            height: 300px;
+            width: 300px;
+            /* transform: skew(5deg); */
+            /* transform: skewY(34deg); */
+            /* transform: skewX(34deg); */
+            /* transform: translateX(34%); */
+            /* transform: translateX(100%); */
+            /* transform: translateY(100%) skewX(40deg) translateX(-100%); */
+            /* transform: translateY(100%) skewX(40deg) translateX(100%); */
+            /* background-color: orangered; */
+            border: 2px solid gray;
+            transition: transform 0.5 ease;
+            /* transform: rotate(50deg); */
+            /* transform: rotate(0.25turn); */
+            /* transform: rotate(0.125turn); */
+            /* transform: rotateY(100deg); */
+            transition: 3s;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- <h1>#42 CSSTransformsMasterClass</h1> -->
+    <div class="container">
+        <div class="box">ik
+    </div>
+    <div class="img">
+        <img src="../img/4.jpeg" alt="" >
+    </div>
+    </div>
+    
+</body>
+</html>

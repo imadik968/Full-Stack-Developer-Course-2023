@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid 2</title>
+    <style>
+        .container{
+            border: 2px solid gray;
+            display: grid;
+            grid-template-areas: "nav nav nav"
+                                    "side article article"
+                                    "footer footer footer";
+            background-color: lightblue;
+            grid-template-columns: 1fr 1fr 1fr;
+            /* width: 80vw; */
+        }
+        .item{
+            display: grid;
+            align-items: center;
+            font-weight: bolder;
+            justify-content: center;
+            border: 2px solid lightgray;
+            /* width: 55px; */
+            height: 55px;
+        }
+        .one{
+            grid-area: nav;
+            background-color: aqua;
+        }
+        .two{
+            grid-area: side;
+            background-color: beige;
+        }
+        .three{
+            grid-area: article;
+            background-color: chocolate;
+        }
+        .four{
+            grid-area: footer;
+            background-color: crimson;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Grid Ultimate Master Class Grid Two</h1>
+    <div class="container">
+        <div class="item one">Nav</div>
+        <div class="item two">Side</div>
+        <div class="item three">Article</div>
+        <div class="item four">Footer</div>
+        <!-- <div class="item">05</div> -->
+    </div>
+</body>
+</html>

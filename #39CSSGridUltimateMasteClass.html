@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#39 CSSGridUltimateMasterClass</title>
+    <style>
+        .container{
+            border: 2px solid gray;
+            display: grid;
+            /* grid-template-columns: [one] 120px [two] 100px [t]; */
+            /* grid-template-rows: 100px 100px 100px; */
+            /* grid-template-columns: repeat(4, 1fr); */
+            grid-template-columns: repeat(4, minmax(100px, 1fr));
+            place-content: center;
+            /* grid-template-rows: repeat(2, 80px); */
+            /* grid-template-columns: 1fr 2fr 1fr; */
+            /* gap: 34px; */
+            /* padding: 10px; */
+            row-gap: 10px;
+            column-gap: 40px;
+            width: 80vw;
+            height: 50vh;
+            align-items: center;
+            justify-content: center;
+        }
+        .item{
+            display: grid;
+            align-items: center;
+            font-weight: bolder;
+            justify-content: center;
+            border: 2px solid lightgray;
+            width: 55px;
+            height: 55px;
+        }
+        .four{
+            /* grid-row: 1/2;
+            grid-column: one/t; */
+        }
+        .four{
+            /* grid-row: 1/2; */
+            /* both lines code same */
+            /* grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column: 1/3; */
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Grid Ultimate Master Class</h1>
+    <div class="container">
+        <div class="item four">01</div>
+        <div class="item">02</div>
+        <div class="item">03</div>
+        <div class="item four">04</div>
+        <div class="item">05</div>
+    </div>
+</body>
+</html>
